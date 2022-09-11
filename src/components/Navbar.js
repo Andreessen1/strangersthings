@@ -8,7 +8,6 @@ const Navbar = ({ logout, token }) => {
       <nav class="navbar">
         <Link class="link" to='/'>Home</Link>
         <Link class="link" to='/posts'>Posts</Link>
-        <Link class="link" to='/profile'>Profile</Link>
 
 {
 token ?(
@@ -19,6 +18,7 @@ token ?(
         }}>Logout</Link>
         
 <Link class="link" to='/posts/create-post'>Create Post</Link>
+<Link class="link" to='/profile'>Profile</Link>
 </>
       
 ): (<>
