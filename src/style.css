@@ -1,0 +1,113 @@
+
+/* This is for the form layouts */
+
+/* This is the whole form boxes */
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: gray;
+    align-items: center;
+    border: solid 5px #343635; 
+
+  }
+  /* This is the individual class input items */
+  .box{
+      display: flex;
+      padding: 5px;
+      margin: 10px;
+  }
+
+
+  /* This is for the nav bar */
+  nav{
+      display: flex;
+      flex-direction: row;
+      padding: 2.5rem;
+      justify-content: space-between;
+      background-color: #343635;
+      text-decoration: none;
+      height: 5rem;
+      text-align: center;
+      margin: 0px;
+  }
+.link{
+    color: antiquewhite;
+}
+
+/* posts */
+.posts{
+    background-color: gray;
+    margin: none;
+    border: solid 2px #343635;
+}
+.card:nth-child(even){
+    background-color: gray;
+    margin: none;
+    border: solid 2px #343635; 
+}
+.card:nth-child(odd){
+    background-color: gold;
+    margin: none;
+    border: solid 2px #343635; 
+}
+
+
+/* This is for Home */
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background-color: gray;
+   
+   
+}
+
+/* This is for create posts */
+
+.createPost{
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: gray;
+    align-items: center;
+    border: solid 5px #343635; 
+
+  }
+  #description{
+      height:70px;
+      width: 60%;
+  }
+
+
+  /* Single post view */
+  /* #return{
+      border: solid black 3px;
+      background-color: gray;
+  } */
+
+
+  /* profile */
+
+  .message{
+      border: solid black 3px;
+   
+  }
+
+  .message:nth-child(even){
+    background-color: gray;
+    margin: none;
+    border: solid 2px #343635; 
+}
+.message:nth-child(odd){
+    background-color: gold;
+    margin: none;
+    border: solid 2px #343635; 
+}
