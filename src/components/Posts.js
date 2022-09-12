@@ -25,7 +25,7 @@ const Posts = ({ posts }) => {
     return (
         <div>
         
-        <div className='searchedBar'>
+        <div>
             <form onSubmit={(event) => {
                 event.preventDefault();
             }}> 
