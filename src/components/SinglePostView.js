@@ -8,7 +8,7 @@ const deleteButton = () => {
 }
  
 
-const SendMessage = ({ postID, token,navigate }) => {
+const SendMessage = ({ postID, token,navigate,getMe }) => {
   const [message, setMessage] = useState({content: ''});
  
     
@@ -17,10 +17,12 @@ const SendMessage = ({ postID, token,navigate }) => {
   }
   if (token){
   return (
-    <form onSubmit={ (ev)=> {
+    <form onSubmit={ async (ev)=> {
       ev.preventDefault();
-      addMessage();
+      await addMessage();
+      getMe();
       navigate('/posts')
+      
     }}>
       <input
         type='text'
@@ -32,7 +34,7 @@ const SendMessage = ({ postID, token,navigate }) => {
   )
 }}
 
-const SinglePostView = ({ posts, token,navigate }) => {
+const SinglePostView = ({ posts, token,navigate,getMe }) => {
   const [activateMessage, setActivateMessage] = useState(false);
   
   const { postID } = useParams();
@@ -55,7 +57,7 @@ const SinglePostView = ({ posts, token,navigate }) => {
       <button onClick={() => setActivateMessage(!activateMessage)}>Message this user</button>
      
       {
-        activateMessage && <SendMessage postID={postID} token={token} navigate={navigate} posts={posts}/>
+        activateMessage && <SendMessage postID={postID} token={token} navigate={navigate} posts={posts} getMe={getMe}/>
       }
       </div>
     </div>

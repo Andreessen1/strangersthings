@@ -1,12 +1,12 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
 
-const Profile = ({ user }) => {
-  const messages = user.messages;
+const Profile = ({ user,messages }) => {
+  // const messages = user.messages;
   const userID = user._id;
 
-  
-  console.log(user)
+
+
   
   return (
     <div>

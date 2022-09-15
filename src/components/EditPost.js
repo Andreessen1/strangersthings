@@ -30,8 +30,6 @@ async function editPost() {
         price: newprice,
         location: newlocation,
         willDeliver: newwillDeliver
-       
-        
     }
    
     
